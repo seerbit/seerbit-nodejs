@@ -1,0 +1,2 @@
+type Environment = "LIVE" | "PILOT"
+
