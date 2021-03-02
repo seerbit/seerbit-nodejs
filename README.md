@@ -68,8 +68,7 @@ standard.Initialize(payload)
     .catch(e=>console.log(e))
 ```
 
-You can find more usage samples here 
-Full documentation can be found [**here**](https://seerbit.github.io/seerbit-nodejs) 
+You can find more usage in the  [samples](samples) folder
 
 
 ## API Documentation ##
