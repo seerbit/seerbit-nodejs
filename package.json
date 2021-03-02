@@ -1,7 +1,7 @@
 {
-  "name": "seerbit-node",
+  "name": "seerbit-nodejs",
   "version": "0.0.1",
-  "description": "",
+  "description": "SeerBit NodsJS SDK",
   "main": "lib/src/index.js",
   "types": "lib/src/index.d.ts",
   "engines": {
