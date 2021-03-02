@@ -7,7 +7,7 @@ class CreateOrderAfterPayment extends Resource{
             service,
             `${service.client.config.endpoint}payments/order`
         );
-    };
-};
+    }
+}
 
 export default CreateOrderAfterPayment;

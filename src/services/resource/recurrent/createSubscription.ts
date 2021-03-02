@@ -7,7 +7,7 @@ class CreateSubscription extends Resource{
             service,
             `${service.client.config.endpoint}recurring/subscribes`
         );
-    };
-};
+    }
+}
 
 export default CreateSubscription;

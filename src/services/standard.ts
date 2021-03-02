@@ -18,9 +18,9 @@ class Standard extends Service {
         for (const pl in requestPayload){
             buildStringToHash += pl + "=" + requestPayload[ pl ] + "&";
         }
-        const stringToHash = buildStringToHash.substr(0,buildStringToHash.length-1) + this.client.config.secretKey
+        const stringToHash = buildStringToHash.substr(0,buildStringToHash.length-1) + this.client.config.secretKey;
 
-        requestPayload.hash = crypto.createHash("sha256").update(stringToHash).digest("hex")
+        requestPayload.hash = crypto.createHash("sha256").update(stringToHash).digest("hex");
         requestPayload.hashType = "sha256";
         return getJsonResponse<IStandard.InitializeRequest, IStandard.InitializeResponse>(
             this._initializeStandardTransaction,
@@ -29,7 +29,7 @@ class Standard extends Service {
             );
     }
 
-    private ensurePayloadIsComplete(requestPayload: IStandard.InitializeRequest){
+    private ensurePayloadIsComplete(requestPayload: IStandard.InitializeRequest): IStandard.InitializeRequest{
         if (!Object.prototype.hasOwnProperty.call(requestPayload,"productDescription")) {
             requestPayload.productDescription = null;
         }

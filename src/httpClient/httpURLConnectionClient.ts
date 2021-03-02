@@ -63,12 +63,12 @@ class HttpURLConnectionClient implements ClientInterface {
         if (!requestOptions.headers) {
             requestOptions.headers = {};
         }
-        let buildEndpoint
+        let buildEndpoint;
         if (json != null) {
              buildEndpoint = !requestOptions.isPost ? JSON.parse(json).query : "";
         }
 
-        let url = new URL(endpoint)
+        let url = new URL(endpoint);
         if (buildEndpoint != null) {
             url = new URL(endpoint + buildEndpoint);
         }

@@ -7,7 +7,7 @@ class UpdateSubscription extends Resource{
             service,
             `${service.client.config.endpoint}recurring/updates`
         );
-    };
-};
+    }
+}
 
 export default UpdateSubscription;

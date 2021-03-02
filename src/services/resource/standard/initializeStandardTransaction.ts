@@ -7,7 +7,7 @@ class InitializeStandardTransaction extends Resource{
             service,
             `${service.client.config.endpoint}payments`
         );
-    };
-};
+    }
+}
 
 export default InitializeStandardTransaction;

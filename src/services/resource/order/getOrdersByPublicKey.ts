@@ -7,7 +7,7 @@ class GetOrdersByPublicKey extends Resource{
             service,
             `${service.client.config.endpoint}products/orders/publicKey/`
         );
-    };
-};
+    }
+}
 
 export default GetOrdersByPublicKey;

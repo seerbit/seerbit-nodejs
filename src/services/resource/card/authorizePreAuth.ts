@@ -8,7 +8,7 @@ class AuthorizePreAuth extends Resource{
             service,
             `${service.client.config.endpoint}payments/authorise`
         );
-    };
+    }
 }
 
 export default AuthorizePreAuth;
