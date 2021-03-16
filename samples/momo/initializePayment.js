@@ -1,4 +1,4 @@
-const {Client, Config,MobileMoneyCheckout } = require("../../dist/src/index");
+const {Client, Config,MobileMoneyCheckout } = require("seerbit-nodejs");
 const {SeerBitConfig} = require("../config");
 const config = new Config(
     {
