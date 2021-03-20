@@ -1,4 +1,4 @@
-const {Client, Config,OrderService } = require("../../dist/src/index");
+const {Client, Config,OrderService } = require("seerbit-nodejs");
 const {SeerBitConfig} = require("../config");
 const config = new Config(
     {
