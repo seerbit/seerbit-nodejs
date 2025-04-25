@@ -11,7 +11,9 @@ declare namespace IStandard{
         productId?: string | null,
         hash: string,
         hashType?: string,
-        publicKey?: string
+        publicKey?: string,
+        fullName: string,
+        tokenize: boolean
     }
 
     export interface InitializeResponse {
